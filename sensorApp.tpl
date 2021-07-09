@@ -61,12 +61,12 @@
   <div class="mainPage">
 
     <div class="liveData">
-      <h3 class="h3">side 1</h3>
-        <!-- <select>
+      <h3 class="h3">RealTimeData</h3>
+        <select>
           <option value="">device</option>
           <option value="">Raspberry Pi #1</option>
           <option value="">placeholder</option>
-        </select> -->
+        </select>
 
 
 
