@@ -1,6 +1,18 @@
 <html>
 <head>
   <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+setInterval(function(){
+      $("#chart1").load(window.location.href + " #chart1" );
+}, 2000);
+      $("#chart2").load(window.location.href + " #chart2" );
+}, 2000);
+      $("#chart3").load(window.location.href + " #chart3" );
+}, 2000);
+});
+</script>
   <script type="text/javascript">
  function histogram_d3() {
    sel = document.getElementById('fn');
@@ -187,7 +199,7 @@ d3.csv("http://localhost:8080/datafiles/"+fname,
 
  </script>
 </head>
-<form onsubmit="histogram_d3();return false;">
+<form onsubmit="histogram_d3();window.setInterval(histogram_d3,1000);return false;">
 <select name='filename' id='fn'>
     %for file_name in listdirs:
       <option>{{file_name}}</option>
@@ -197,7 +209,7 @@ d3.csv("http://localhost:8080/datafiles/"+fname,
 </form>
 
 <div id="graphs">
-<span id="chart1"></span>
+<span id="chart1" ></span>
 <span id="chart2"></span>
 <span id="chart3"></span>
 </div>

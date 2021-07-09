@@ -47,6 +47,8 @@
   </style>
     <!--css in here-->
       <script src="https://d3js.org/d3.v4.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src='/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/realTimeGraph.js'></script>
   </head>
 
   <body>
@@ -67,8 +69,7 @@
           <option value="">Raspberry Pi #1</option>
           <option value="">placeholder</option>
         </select>
-        <!-- a quick comment-->
-
+          <div id='realTime'></div>
 
       </div>
 

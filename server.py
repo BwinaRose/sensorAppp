@@ -29,6 +29,15 @@ def read_data_files(filename):
         text = f.read()
     return text
 
+@route('/livedata/<filename>')
+def read_data_files_gen(filename):
+    filename = '/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/' + filename
+    with open(filename, 'r') as f:
+        for line in f:
+        #text = f.read()
+            yield line
+    #return text
+
 
 
 
