@@ -5,8 +5,8 @@ def dataGen(n):
 
 
     filename = '/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/'
-    filename += time.strftime('%d-%m-%Y.csv')
-    x = os.path.exists('/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/'+time.strftime('%d-%m-%Y.csv'))
+    filename += time.strftime('%Y-%m-%d.csv')
+    x = os.path.exists('/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/'+time.strftime('%Y-%m-%d.csv'))
     if x == False:
         with open (filename,"w") as outfile:
             outfile.write('time,pm1,pm2,pm10\n')

@@ -1,4 +1,5 @@
 import os
+#import time
 from bottle import route, request, run, template, post, static_file
 
 
@@ -22,6 +23,7 @@ def get_data_files():
 #     text = f.readline()
 #     return text
 
+
 @route('/datafiles/<filename>')
 def read_data_files(filename):
     filename = '/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/' + filename
@@ -29,17 +31,25 @@ def read_data_files(filename):
         text = f.read()
     return text
 
-@route('/livedata/<filename>')
-def read_data_files_gen(filename):
-    filename = '/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/' + filename
-    with open(filename, 'r') as f:
-        for line in f:
-        #text = f.read()
-            yield line
-    #return text
+@route('/js/<jsfile>')
+def send_javascript(jsfile):
+    return static_file(filename=jsfile, root='.')
+
+# @route('/livedata')
+# def read_live_data():
+#     return template('live_data')
+#
+# @route('/livedata/<filename>')
+# def read_data_files_gen(filename):
+#     filename = '/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/DataLog/' + filename
+#     with open(filename, 'r') as f:
+#         for line in f:
+#         #text = f.read()
+#             yield line
+#          return text
 
 
 
 
 if __name__ == '__main__':
-    run(host='localhost', port=8080)
+    run(reloader=True, debug=True, host='localhost', port=8080)

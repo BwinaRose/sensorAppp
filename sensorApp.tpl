@@ -47,9 +47,8 @@
   </style>
     <!--css in here-->
       <script src="https://d3js.org/d3.v4.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src='/Users/srkrueger19@students.desu.edu/Desktop/sensorAppp/realTimeGraph.js'></script>
-  </head>
+
+      </head>
 
   <body>
     <title>Sensor App</title>
@@ -63,14 +62,9 @@
   <div class="mainPage">
 
     <div class="liveData">
-      <h3 class="h3">RealTimeData</h3>
-        <select>
-          <option value="">device</option>
-          <option value="">Raspberry Pi #1</option>
-          <option value="">placeholder</option>
-        </select>
-          <div id='realTime'></div>
-
+      %import time
+      %filename = time.strftime('%Y-%m-%d.csv')
+      <a href="http://localhost:8080/livedata/{{filename}}"><h3 class='h3'>LiveData</h3></a>
       </div>
 
 
