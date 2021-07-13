@@ -3,69 +3,65 @@
 
 <html>
   <head>
-    <style>
-    .h1{
-      color: black;
-      font-family:Arial Black,Gadget,sans-serif;
-      font-weight:172;
-      text-align:center;
-      text-shadow:-2px 2px blue;
-      font-size:34px;
-      text-transform:uppercase;
-    }
+      <style>
+      .main_h1{
+        color: black;
+        font-family:Arial Black,Gadget,sans-serif;
+        font-weight:172;
+        text-align:center;
+        text-shadow:-2px 2px blue;
+        font-size:34px;
+        text-transform:uppercase;
+      }
 
-    .h3{
-      padding: 50px;
-    }
+      .main_h3{
+        padding: 50px;
+      }
 
-    .mainBG{
-      opacity: 0.5;
-      position:absolute;
-      width:100%;
-    }
+      .mainBG{
+        opacity: 0.5;
+        position:absolute;
+        width:100%;
+      }
 
-    .div1{
-      border: 5px outset blue;
-      background-image: url(https://i.imgur.com/qJPcfNs.png);
-      background-size: cover;
-    }
+      .main_div1{
+        border: 5px outset blue;
+        background-image: url(https://i.imgur.com/qJPcfNs.png);
+        background-size: cover;
+      }
 
-    .mainPage{
-      margin: 15px;
-    }
+      .mainPage{
+        margin: 15px;
+      }
 
-    .liveData{
-      float:left;
-      width:50%;
+      .liveData{
+        float:left;
+        width:50%;
 
-    }
+      }
 
-    .listData{
-      float:right;
-      width:50%;
-    }
-  </style>
-    <!--css in here-->
-      <script src="https://d3js.org/d3.v4.js"></script>
-
+      .listData{
+        float:right;
+        width:50%;
+      }
+      </style>
+        <script src="https://d3js.org/d3.v4.js"></script>
       </head>
 
   <body>
     <title>Sensor App</title>
-
-    <div class="div1">
-      <h1 class='h1'>OPC Data</h1>
+    <div class="main_div1">
+      <h1 class='main_h1'>OPC Data</h1>
     </div>
 
 
 
   <div class="mainPage">
-
-    <div class="liveData">
+    <!-- <div class="liveData">
       %import time
       %filename = time.strftime('%Y-%m-%d.csv')
       <a href="http://localhost:8080/livedata/{{filename}}"><h3 class='h3'>LiveData</h3></a>
-      </div>
+      </div> -->
 
 
       <div class="listData">

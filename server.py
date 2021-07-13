@@ -1,7 +1,8 @@
-import os
-#import time
+import os, sys
 from bottle import route, request, run, template, post, static_file
 
+
+dirname = os.path.dirname(sys.argv[0])
 
 @route('/')
 def root():
@@ -31,9 +32,19 @@ def read_data_files(filename):
         text = f.read()
     return text
 
-@route('/js/<jsfile>')
+@route('/static/<jsfile>')
 def send_javascript(jsfile):
-    return static_file(filename=jsfile, root='.')
+    return static_file(filename=jsfile, root='./static')
+
+
+@route('/static/<filename:re:.*\.css>')
+def send_css(filename):
+    return static_file(filename, root=dirname+'/static')
+
+@route('/static/<filename:re:.*\.js>')
+def send_js(filename):
+    return static_file(filename, root=dirname+'/static')
+
 
 # @route('/livedata')
 # def read_live_data():
