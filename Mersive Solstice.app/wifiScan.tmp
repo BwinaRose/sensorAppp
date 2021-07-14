@@ -1,0 +1,21 @@
+                            SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
+                     DSU_Student f6:cb:ac:4a:5d:17 -93  112,-1  Y  US NONE
+                    DSU_Wireless e2:cb:ac:4a:5d:17 -93  112,-1  Y  US NONE
+                        CIS_WiFi f2:cb:ac:4a:5d:17 -92  112,-1  Y  US WPA2(PSK,SAE/AES/AES) 
+                     DSU_Student f6:cb:ac:4a:c6:60 -92  104     Y  US NONE
+                    DSU_Wireless e2:cb:ac:4a:c6:60 -92  104     Y  US NONE
+                       mgitchotc 80:ea:96:f3:04:e7 -89  149     Y  US WPA(PSK/TKIP/TKIP) WPA2(PSK/AES,TKIP/TKIP) 
+                       mgitchotc 80:ea:96:f3:04:e6 -81  11      Y  US WPA(PSK/TKIP/TKIP) WPA2(PSK/AES,TKIP/TKIP) 
+                        CIS_WiFi f2:cb:bc:4a:c6:60 -80  6       Y  US WPA2(PSK,SAE/AES/AES) 
+                         Sabrina 00:18:74:4f:70:f0 -79  48      N  -- NONE
+      HP-Print-6F-Officejet 4630 64:51:06:71:fe:6f -79  1       N  -- NONE
+                    NETGEAR49-5G cc:40:d0:9f:c6:a0 -75  149     Y  US WPA2(PSK/AES/AES) 
+                       NETGEAR49 cc:40:d0:9f:c6:9e -65  11      Y  US WPA2(PSK/AES/AES) 
+                         Sabrina 00:18:74:4b:71:20 -57  9       N  -- NONE
+ DIRECT-4E-HP MAKERSPACE PRINTER ec:5c:68:7b:e3:4e -53  6       Y  -- WPA2(PSK/AES/AES) 
+                     DSU_Student f6:cb:bc:4a:c6:58 -47  1       Y  US NONE
+                        CIS_WiFi f2:cb:bc:4a:c6:58 -47  1       Y  US WPA2(PSK,SAE/AES/AES) 
+                    DSU_Wireless e0:cb:bc:4a:c6:58 -47  1       Y  US NONE
+                     DSU_Student f6:cb:ac:4a:c6:58 -57  161,-1  Y  US NONE
+                        CIS_WiFi f2:cb:ac:4a:c6:58 -57  161,-1  Y  US WPA2(PSK,SAE/AES/AES) 
+                    DSU_Wireless e2:cb:ac:4a:c6:58 -56  161,-1  Y  US NONE

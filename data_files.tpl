@@ -31,9 +31,11 @@
 </style>
 <script>
   $(function() {
-    $( "#slider1" ).slider({
-  value: 50
-});
+    $('#slider1').slider({
+      max:5,
+      min:0
+    });
+
   });
   </script>
 
